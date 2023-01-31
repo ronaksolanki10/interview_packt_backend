@@ -108,7 +108,7 @@ Replace ```<YOUR_TOKEN>``` with the token that your received from the ```/api/ad
 ```
 
 | Parameter | Type     | Description                       |
-| :-------- | :------- | :-------------------------------- ||
+| :-------- | :------- | :-------------------------------- |
 | `title`      | `string` | **Required**. Title of the book |
 | `author`      | `string` | **Required**. Author of the book |
 | `published_on`      | `date` | **Required**.  Published On Date of the book|
