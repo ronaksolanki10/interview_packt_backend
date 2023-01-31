@@ -133,7 +133,7 @@ Replace ```<YOUR_TOKEN>``` with the token that your received from the ```/api/ad
 ```{id}``` - ID of the book
 
 | Parameter | Type     | Description                       |
-| :-------- | :------- | :-------------------------------- ||
+| :-------- | :------- | :-------------------------------- |
 | `_method`      | `string` | **Required**. Method of the API request and is fixed to : ```PUT``` |
 | `title`      | `string` | **Required**. Title of the book |
 | `author`      | `string` | **Required**. Author of the book |
