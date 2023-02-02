@@ -2,6 +2,7 @@
 
 namespace App\Exceptions;
 
+use Illuminate\Validation\ValidationException;
 use Illuminate\Auth\AuthenticationException;
 use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;
 use Symfony\Component\HttpKernel\Exception\HttpException;
@@ -87,6 +88,10 @@ class Handler extends ExceptionHandler
             case $exception instanceof AuthenticationException:
                 $httpCode = 401;
                 $message = trans('exception.session_expired');
+                break;
+            case $exception instanceof ValidationException:
+                $httpCode = 422;
+                $message = collect($exception->errors());
                 break;
             default:
                 $httpCode = 500;
